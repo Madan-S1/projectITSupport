@@ -58,7 +58,7 @@ export default function TicketInputPanel({
       className="glass-panel relative overflow-hidden rounded-3xl p-6 shadow-2xl transition-all duration-300"
     >
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-sky-500 via-indigo-500 to-emerald-400" />
-      
+
       <div className="flex items-center justify-between">
         <label htmlFor="ticket-message" className="flex items-center gap-2.5 text-base font-bold text-white tracking-tight">
           <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-sky-500/20 text-sky-400 border border-sky-500/30">
@@ -89,9 +89,8 @@ export default function TicketInputPanel({
           className="w-full rounded-2xl border border-slate-800 bg-slate-950/80 p-4 font-sans text-sm text-slate-100 placeholder:text-slate-600 focus:border-sky-400 focus:bg-slate-950 focus:outline-none focus:ring-4 focus:ring-sky-500/20 disabled:opacity-50 transition-all duration-200 resize-y shadow-inner"
         />
         <div
-          className={`mt-1.5 text-right font-mono text-xs ${
-            nearLimit ? "font-bold text-rose-400" : "text-slate-500"
-          }`}
+          className={`mt-1.5 text-right font-mono text-xs ${nearLimit ? "font-bold text-rose-400" : "text-slate-500"
+            }`}
         >
           {message.length}/4000
         </div>
@@ -106,7 +105,7 @@ export default function TicketInputPanel({
             Select a sample to populate
           </span>
         </div>
-        
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 mb-5">
           {SAMPLE_TICKETS.map((t) => (
             <button
