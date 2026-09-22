@@ -5,7 +5,7 @@
  * design) in exactly one place.
  */
 
-const BASE_URL = "/api";
+const BASE_URL = import.meta.env.VITE_API_BASE_URL || "/api";
 
 export class TriageUnavailableError extends Error {
   constructor(detail, retryable) {
